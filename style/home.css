@@ -1,67 +1,124 @@
-body {
-    margin: 0;
-    font-family: sans-serif;
+body{
+    margin: 10px 5px 10px 5px;
 }
 
-/* Estilo del navegador */
-
-.navbar {
+header {
     background-color: #333;
     color: white;
-    position: sticky; /* Hace que el nav se mantenga fijo al hacer scroll */
-    top: 0; /* Lo fija en la parte superior */
-    z-index: 100; /* Asegura que esté por encima del contenido */
-}
-
-.container {
+    padding: 15px 20px;
+  }
+  
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-}
-
-.logo {
+  }
+  
+  .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: white;
     text-decoration: none;
-}
-
-.nav-links {
+    color: whitesmoke;
+  }
+  
+  .main-menu {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-}
-
-.nav-links li {
+  }
+  
+  .menu-item {
     margin-left: 20px;
-}
-
-.nav-links a {
+    position: relative;
+  }
+  
+  .menu-item a {
+    display: block;
     color: white;
     text-decoration: none;
-}
-
-.nav-links a:hover{
-    color: rgb(31, 143, 195);
-}
-
-.content {
+    padding: 10px 15px;
+  }
+  
+  .menu-item.has-submenu > a::after {
+    content: "▼";
+    margin-left: 5px;
+  }
+  
+  .mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: none;
     padding: 20px;
-    /* Agrega suficiente contenido para que la página sea desplazable */
-    height: 200vh; /* 200% de la altura de la ventana */
-}
-
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el ancho mínimo según necesites */
+    gap: 20px;
+    width: 160px;
+  }
+  
+  .has-submenu:hover .mega-menu {
+    display: grid;
+  }
+  
+  .mega-menu-column h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .mega-menu-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mega-menu-column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .mega-menu-column ul li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 0;
+  }
+  
+  .mega-menu-column ul li a:hover {
+    color: #007bff; /* Un color de resaltado al pasar el mouse */
+  }
+  
+  /* Opcional: Animación para el despliegue */
+  .mega-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .has-submenu:hover .mega-menu {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 /* Estilo del video de fondo */
+
+.contenedor-video{
+    margin-bottom: 20px;
+}
 
 #video-background {
     position: absolute; /* O absolute, dependiendo del diseño */
     top: 0;
     left: 0;
-    margin-top: 80px;
-    width: 100%;
-    height: 100%;
+    
     z-index: -1; /* Coloca el video detrás del contenido */
+    margin: 90px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .content-video {

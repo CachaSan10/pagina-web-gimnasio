@@ -1,0 +1,151 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.pricing-toggle {
+    text-align: center;
+    margin: 20px 40px;
+}
+
+.pricing-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.pricing-toggle label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-toggle label:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.pricing-toggle label:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.pricing-toggle input[type="checkbox"]:checked + label {
+    background-color: #007bff;
+    color: white;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.plan {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.plan-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.plan-price .monthly {
+    display: block;
+}
+
+.plan-price .annual {
+    display: none;
+}
+
+.pricing-toggle input[type="checkbox"]:checked ~ .pricing-table .plan-price .monthly {
+    display: none;
+}
+
+.pricing-toggle input[type="checkbox"]:checked ~ .pricing-table .plan-price .annual {
+    display: block;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+.plan-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+    background-color: #0056b3;
+}
+
+/* Tooltip Styles */
+.has-tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 150px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.has-tooltip:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}

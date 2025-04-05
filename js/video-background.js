@@ -3,12 +3,16 @@ var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var startTime = 0; // Comienza en el minuto 1 (60 segundos)
+var endTime = 50;   // Termina en el minuto 2 (120 segundos)
 
 // Crea el reproductor de video
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('video-background', {
-        videoId: '_YYmfM2TfUA', // ID del video
+        videoId: '-uY51GY5tT8', // ID del video
+        height: '360',
+      width: '100%',
         playerVars: {
             autoplay: 1,
             loop: 1,
@@ -23,10 +27,31 @@ function onYouTubeIframeAPIReady() {
         },
         events: {
             'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
         }
     });
 }
 
+var startTime = 60; // Comienza en el minuto 1 (60 segundos)
+var endTime = 120;   // Termina en el minuto 2 (120 segundos)
+
+//function onPlayerReady(event) {
+  //  event.target.playVideo();
+//}
+
 function onPlayerReady(event) {
-    event.target.playVideo();
-}
+    event.target.seekTo(startTime); // Ir al tiempo de inicio cuando el reproductor esté listo
+  }
+  
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING) {
+      // Verificar si hemos alcanzado el tiempo de finalización
+      if (player.getCurrentTime() >= endTime) {
+        player.seekTo(startTime); // Volver al inicio
+        player.playVideo();
+      }
+    } else if (event.data == YT.PlayerState.ENDED) {
+      player.seekTo(startTime); // Volver al inicio si el video termina completamente
+      player.playVideo();
+    }
+  }

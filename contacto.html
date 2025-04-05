@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/formulario.css">
+
+
+    <title>contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div ><a href="home.html" class="logo">FITNESS PARK</a></div>
+          <ul class="main-menu">
+            <li class="menu-item has-submenu">
+              <a href="clases.html">Clases</a>
+              <div class="mega-menu">
+                <div class="mega-menu-column">
+                  <h3>Cardio</h3>
+                  <ul>
+                    <li><a href="#">Zumba</a></li>
+                    <li><a href="#">Spinning</a></li>
+                    <li><a href="#">Aeróbicos</a></li>
+                    <li><a href="#">Running Grupal</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <h3>Fuerza</h3>
+                  <ul>
+                    <li><a href="#">Musculación</a></li>
+                    <li><a href="#">Crossfit</a></li>
+                    <li><a href="#">Funcional</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <h3>Cuerpo y Mente</h3>
+                  <ul>
+                    <li><a href="#">Yoga</a></li>
+                    <li><a href="#">Pilates</a></li>
+                    <li><a href="#">Meditación</a></li>
+                    <li><a href="#">Estiramientos</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <h3>Especializadas</h3>
+                  <ul>
+                    <li><a href="#">Defensa Personal</a></li>
+                    <li><a href="#">Boxeo</a></li>
+                    <li><a href="#">Natación (si aplica)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item has-submenu">
+              <a href="entrenadores.html">Entrenadores</a>
+              <div class="mega-menu">
+                <div class="mega-menu-column">
+                  <h3>Entrenadores por Especialidad</h3>
+                  <ul>
+                    <li><a href="#">Cardio</a></li>
+                    <li><a href="#">Fuerza</a></li>
+                    <li><a href="#">Cuerpo y Mente</a></li>
+                    <li><a href="#">Entrenadores Personales</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <h3>Conoce a Nuestro Equipo</h3>
+                  <ul>
+                    <li><a href="#">Perfil de Entrenador 1</a></li>
+                    <li><a href="#">Perfil de Entrenador 2</a></li>
+                    <li><a href="#">Ver Todos los Entrenadores</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <img src="imagen-entrenadores.jpg" alt="Entrenadores" style="max-width: 100%;">
+                </div>
+              </div>
+            </li>
+            <li class="menu-item"><a href="precios.html">Precios</a></li>
+            <li class="menu-item"><a href="blog-fitness.html">Blog</a></li>
+            <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <div class="container">
+        <h1>Formulario de Contacto</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required minlength="3">
+                <div class="validation-message"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="validation-message"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+                <div class="validation-message"></div>
+            </div>
+
+            <button type="submit" class="submit-button">
+                Enviar
+                <div class="spinner-container">
+                    <div class="spinner"></div>
+                </div>
+            </button>
+        </form>
+
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>¡Formulario Enviado!</h2>
+                <p>Gracias por tu mensaje. Te contactaremos pronto.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/formulario.js"></script>
+
+
+</body>
+</html>
