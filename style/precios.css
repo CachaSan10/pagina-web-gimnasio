@@ -1,11 +1,10 @@
 body {
     font-family: sans-serif;
-    margin: 20px;
 }
 
 .pricing-toggle {
     text-align: center;
-    margin: 20px 40px;
+    margin: 100px 20px 40px 20px;
 }
 
 .pricing-toggle input[type="checkbox"] {
@@ -20,6 +19,10 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+ #mensual{
+    background: rgb(101, 255, 101);
 }
 
 .pricing-toggle label:first-child {
@@ -39,6 +42,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    margin: 0px 30px 20px 30px;
 }
 
 .plan {
@@ -66,13 +70,8 @@ body {
     margin-bottom: 15px;
 }
 
-.plan-price .monthly {
-    display: block;
-}
 
-.plan-price .annual {
-    display: none;
-}
+
 
 .pricing-toggle input[type="checkbox"]:checked ~ .pricing-table .plan-price .monthly {
     display: none;

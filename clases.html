@@ -3,86 +3,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/clases.css">
+
 
     <title>clases</title>
 </head>
 <body>
 
-    <header>
-        <nav>
-          <div ><a href="home.html" class="logo">FITNESS PARK</a></div>
-          <ul class="main-menu">
-            <li class="menu-item has-submenu">
-              <a href="clases.html">Clases</a>
-              <div class="mega-menu">
+   
+  <header>
+    <div class="nav-container">
+      <nav class="main-nav">
+        <div class="logo">FITNESS PARK</div>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="home.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="clases.html">Clases</a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
                 <div class="mega-menu-column">
-                  <h3>Cardio</h3>
-                  <ul>
-                    <li><a href="#">Zumba</a></li>
-                    <li><a href="#">Spinning</a></li>
-                    <li><a href="#">Aeróbicos</a></li>
-                    <li><a href="#">Running Grupal</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-column">
-                  <h3>Fuerza</h3>
-                  <ul>
-                    <li><a href="#">Musculación</a></li>
-                    <li><a href="#">Crossfit</a></li>
-                    <li><a href="#">Funcional</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-column">
-                  <h3>Cuerpo y Mente</h3>
+                  <h3>Clases</h3>
                   <ul>
                     <li><a href="#">Yoga</a></li>
                     <li><a href="#">Pilates</a></li>
-                    <li><a href="#">Meditación</a></li>
-                    <li><a href="#">Estiramientos</a></li>
+                    <li><a href="#">CrossFit</a></li>
+                    <li><a href="#">Spinning</a></li>
+                    <li><a href="#">Zumba</a></li>
                   </ul>
                 </div>
+
                 <div class="mega-menu-column">
-                  <h3>Especializadas</h3>
+                  <h3>Niveles</h3>
                   <ul>
-                    <li><a href="#">Defensa Personal</a></li>
-                    <li><a href="#">Boxeo</a></li>
-                    <li><a href="#">Natación (si aplica)</a></li>
+                    <li><a href="#">Principiantes</a></li>
+                    <li><a href="#">Intermedios</a></li>
+                    <li><a href="#">Avanzados</a></li>
+                    <li><a href="#">Personalizado</a></li>
                   </ul>
                 </div>
+
               </div>
-            </li>
-            <li class="menu-item has-submenu">
-              <a href="entrenadores.html">Entrenadores</a>
-              <div class="mega-menu">
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="entrenadores.html">Entrenadores</a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
                 <div class="mega-menu-column">
-                  <h3>Entrenadores por Especialidad</h3>
+                  <h3>Nuestro Equipo</h3>
                   <ul>
-                    <li><a href="#">Cardio</a></li>
-                    <li><a href="#">Fuerza</a></li>
-                    <li><a href="#">Cuerpo y Mente</a></li>
-                    <li><a href="#">Entrenadores Personales</a></li>
+                    <li><a href="#">Todos los entrenadores</a></li>
+                    <li><a href="#">Especialistas en fuerza</a></li>
+                    <li><a href="#">Entrenadores cardiovasculares</a></li>
+                    <li><a href="#">Expertos en nutrición</a></li>
                   </ul>
                 </div>
                 <div class="mega-menu-column">
-                  <h3>Conoce a Nuestro Equipo</h3>
+                  <h3>Entrenamiento Personal</h3>
                   <ul>
-                    <li><a href="#">Perfil de Entrenador 1</a></li>
-                    <li><a href="#">Perfil de Entrenador 2</a></li>
-                    <li><a href="#">Ver Todos los Entrenadores</a></li>
+                    <li><a href="#">Sesiones individuales</a></li>
+                    <li><a href="#">Planes a medida</a></li>
+                    <li><a href="#">Seguimiento online</a></li>
+                    <li><a href="#">Evaluación física</a></li>
                   </ul>
                 </div>
-                <div class="mega-menu-column">
-                  <img src="imagen-entrenadores.jpg" alt="Entrenadores" style="max-width: 100%;">
-                </div>
+
               </div>
-            </li>
-            <li class="menu-item"><a href="precios.html">Precios</a></li>
-            <li class="menu-item"><a href="blog-fitness.html">Blog</a></li>
-            <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="precios.html">Precios</a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column">
+                  <h3>Membresías</h3>
+                  <ul>
+                    <li><a href="#">Básica</a></li>
+                    <li><a href="#">Estándar</a></li>
+                    <li><a href="#">Premium</a></li>
+                   
+                  </ul>
+                </div>
+
+
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="blog-fitness.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Nuestras Clases</h1>
+    
+    <!-- Sistema de filtrado -->
+    <div class="filter-section">
+        <h2>Filtrar por categoría</h2>
+        <div class="filter-options">
+            <input type="radio" id="todas" name="filter" class="filter-option" checked>
+            <label for="todas" class="filter-label">Todas</label>
+            
+            <input type="radio" id="musculacion" name="filter" class="filter-option">
+            <label for="musculacion" class="filter-label">Musculación</label>
+            
+            <input type="radio" id="crossfit" name="filter" class="filter-option">
+            <label for="crossfit" class="filter-label">CrossFit</label>
+            
+            <input type="radio" id="yoga" name="filter" class="filter-option">
+            <label for="yoga" class="filter-label">Yoga</label>
+            
+            <input type="radio" id="spinning" name="filter" class="filter-option">
+            <label for="spinning" class="filter-label">Spinning</label>
+        </div>
+    </div>
+    
+    <!-- Galería Masonry de clases -->
+    <div class="classes-gallery">
+        <!-- Clase 1 -->
+        <div class="class-card" data-category="musculacion">
+            <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Musculación" class="class-img">
+            <div class="class-info">
+                <span class="class-category">Musculación</span>
+                <h3 class="class-title">Fuerza Básica</h3>
+                <p class="class-trainer">Con Carlos Méndez</p>
+                <p>Introducción a las técnicas de levantamiento de pesas.</p>
+            </div>
+            <div class="class-overlay">
+                <h3>Fuerza Básica</h3>
+                <p>Nivel: Principiante</p>
+                <p>Duración: 45 min</p>
+                <p>Recomendado para quienes comienzan en el gimnasio.</p>
+            </div>
+        </div>
+        
+        <!-- Clase 2 -->
+        <div class="class-card" data-category="crossfit">
+            <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="CrossFit" class="class-img">
+            <div class="class-info">
+                <span class="class-category">CrossFit</span>
+                <h3 class="class-title">WOD Intenso</h3>
+                <p class="class-trainer">Con Laura Gómez</p>
+                <p>Entrenamiento funcional de alta intensidad.</p>
+            </div>
+            <div class="class-overlay">
+                <h3>WOD Intenso</h3>
+                <p>Nivel: Avanzado</p>
+                <p>Duración: 60 min</p>
+                <p>Quema hasta 600 calorías en una sesión.</p>
+            </div>
+        </div>
+        
+        <!-- Clase 3 -->
+        <div class="class-card" data-category="yoga">
+            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Yoga" class="class-img">
+            <div class="class-info">
+                <span class="class-category">Yoga</span>
+                <h3 class="class-title">Vinyasa Flow</h3>
+                <p class="class-trainer">Con Ana Rodríguez</p>
+                <p>Secuencias dinámicas que sincronizan movimiento y respiración.</p>
+            </div>
+            <div class="class-overlay">
+                <h3>Vinyasa Flow</h3>
+                <p>Nivel: Intermedio</p>
+                <p>Duración: 55 min</p>
+                <p>Mejora flexibilidad y reduce estrés.</p>
+            </div>
+        </div>
+        
+        <!-- Clase 4 -->
+        <div class="class-card" data-category="spinning">
+            <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Spinning" class="class-img">
+            <div class="class-info">
+                <span class="class-category">Spinning</span>
+                <h3 class="class-title">Ruta Montaña</h3>
+                <p class="class-trainer">Con Javier López</p>
+                <p>Sesión de ciclismo indoor con simulaciones de terreno.</p>
+            </div>
+            <div class="class-overlay">
+                <h3>Ruta Montaña</h3>
+                <p>Nivel: Todos</p>
+                <p>Duración: 45 min</p>
+                <p>Quema hasta 500 calorías con música motivadora.</p>
+            </div>
+        </div>
+        
+        <!-- Clase 5 -->
+        <div class="class-card" data-category="musculacion">
+            <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Musculación" class="class-img">
+            <div class="class-info">
+                <span class="class-category">Musculación</span>
+                <h3 class="class-title">Powerlifting</h3>
+                <p class="class-trainer">Con David Rojas</p>
+                <p>Técnicas avanzadas para aumentar tu fuerza máxima.</p>
+            </div>
+            <div class="class-overlay">
+                <h3>Powerlifting</h3>
+                <p>Nivel: Avanzado</p>
+                <p>Duración: 60 min</p>
+                <p>Enfocado en sentadilla, press banca y peso muerto.</p>
+            </div>
+        </div>
+        
+        <!-- Clase 6 -->
+        <div class="class-card" data-category="yoga">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb00913c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Yoga" class="class-img">
+            <div class="class-info">
+                <span class="class-category">Yoga</span>
+                <h3 class="class-title">Yin Yoga</h3>
+                <p class="class-trainer">Con Marta Sánchez</p>
+                <p>Posturas mantenidas para liberar tensiones profundas.</p>
+            </div>
+            <div class="class-overlay">
+                <h3>Yin Yoga</h3>
+                <p>Nivel: Todos</p>
+                <p>Duración: 50 min</p>
+                <p>Perfecto para relajación y flexibilidad profunda.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Tabla de horarios -->
+    <div class="schedule-section">
+        <h2>Horarios Semanales</h2>
+        <div class="schedule-container">
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7:00</td>
+                        <td><div class="class-slot yoga">Yoga Matutino</div></td>
+                        <td></td>
+                        <td><div class="class-slot yoga">Yoga Matutino</div></td>
+                        <td></td>
+                        <td><div class="class-slot yoga">Yoga Matutino</div></td>
+                        <td><div class="class-slot spinning">Spinning AM</div></td>
+                    </tr>
+                    <tr>
+                        <td>9:00</td>
+                        <td><div class="class-slot musculacion">Fuerza Básica</div></td>
+                        <td><div class="class-slot crossfit">CrossFit</div></td>
+                        <td><div class="class-slot musculacion">Fuerza Básica</div></td>
+                        <td><div class="class-slot crossfit">CrossFit</div></td>
+                        <td><div class="class-slot musculacion">Fuerza Básica</div></td>
+                        <td><div class="class-slot yoga">Yoga Weekend</div></td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td><div class="class-slot spinning">Spinning</div></td>
+                        <td><div class="class-slot yoga">Yoga Mediodía</div></td>
+                        <td><div class="class-slot spinning">Spinning</div></td>
+                        <td><div class="class-slot yoga">Yoga Mediodía</div></td>
+                        <td><div class="class-slot spinning">Spinning</div></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                        <td><div class="class-slot crossfit">CrossFit</div></td>
+                        <td><div class="class-slot musculacion">Powerlifting</div></td>
+                        <td><div class="class-slot crossfit">CrossFit</div></td>
+                        <td><div class="class-slot musculacion">Powerlifting</div></td>
+                        <td><div class="class-slot crossfit">CrossFit</div></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td><div class="class-slot yoga">Yoga Nocturno</div></td>
+                        <td><div class="class-slot spinning">Spinning Night</div></td>
+                        <td><div class="class-slot yoga">Yoga Nocturno</div></td>
+                        <td><div class="class-slot spinning">Spinning Night</div></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+      <!-- Sección Newsletter -->
+      <div class="footer-section newsletter">
+          <h3>Suscríbete a nuestro Newsletter</h3>
+          <p>Recibe las últimas noticias, promociones y consejos de fitness directamente en tu correo.</p>
+          <form class="newsletter-form">
+              <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+              <button type="submit" class="newsletter-btn">Suscribirse</button>
+          </form>
+      </div>
+      
+      <!-- Enlaces rápidos -->
+      <div class="footer-section quick-links">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Clases</a></li>
+              <li><a href="#">Entrenadores</a></li>
+              <li><a href="#">Precios</a></li>
+              <li><a href="#">Horarios</a></li>
+              <li><a href="#">Contacto</a></li>
           </ul>
-        </nav>
-      </header>
+      </div>
+      
+      <!-- Redes sociales -->
+      <div class="footer-section social-media">
+          <h3>Síguenos</h3>
+          <p>Conéctate con nosotros en redes sociales y no te pierdas nuestras actualizaciones.</p>
+          <div class="social-icons">
+              <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+      
+      <!-- Mapa -->
+      <div class="footer-section">
+          <h3>Encuéntranos</h3>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.2043152548918!2d-58.78885506142281!3d-34.644381793234935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9525fcbe8dd3%3A0xcc8ca2fdcd2a9b41!2sFitness%20Park%20Gym!5e0!3m2!1ses!2sar!4v1743893452495!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>             </div>
+      </div>
+  </div>
+  
+  <!-- Copyright -->
+  <div class="copyright">
+      <p>&copy; 2023 PowerFit Gym. Todos los derechos reservados. | <a href="#" style="color: #f0c14b; text-decoration: none;">Política de Privacidad</a> | <a href="#" style="color: #f0c14b; text-decoration: none;">Términos de Servicio</a></p>
+  </div>
+</footer>
     
 </body>
 </html>
