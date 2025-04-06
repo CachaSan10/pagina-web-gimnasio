@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/header-footer.css">
+    <link rel="stylesheet" href="../style/formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <title>contacto</title>
+</head>
+<body>
+    
+  <header>
+    <div class="nav-container">
+      <nav class="main-nav">
+        <div class="logo">FITNESS PARK</div>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="clases.html">Clases</a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column">
+                  <h3>Clases</h3>
+                  <ul>
+                    <li><a href="#">Yoga</a></li>
+                    <li><a href="#">Pilates</a></li>
+                    <li><a href="#">CrossFit</a></li>
+                    <li><a href="#">Spinning</a></li>
+                    <li><a href="#">Zumba</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-menu-column">
+                  <h3>Niveles</h3>
+                  <ul>
+                    <li><a href="#">Principiantes</a></li>
+                    <li><a href="#">Intermedios</a></li>
+                    <li><a href="#">Avanzados</a></li>
+                    <li><a href="#">Personalizado</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="entrenadores.html">Entrenadores</a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column">
+                  <h3>Nuestro Equipo</h3>
+                  <ul>
+                    <li><a href="#">Todos los entrenadores</a></li>
+                    <li><a href="#">Especialistas en fuerza</a></li>
+                    <li><a href="#">Entrenadores cardiovasculares</a></li>
+                    <li><a href="#">Expertos en nutrición</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <h3>Entrenamiento Personal</h3>
+                  <ul>
+                    <li><a href="#">Sesiones individuales</a></li>
+                    <li><a href="#">Planes a medida</a></li>
+                    <li><a href="#">Seguimiento online</a></li>
+                    <li><a href="#">Evaluación física</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="precios.html">Precios</a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column">
+                  <h3>Membresías</h3>
+                  <ul>
+                    <li><a href="#">Básica</a></li>
+                    <li><a href="#">Estándar</a></li>
+                    <li><a href="#">Premium</a></li>
+                   
+                  </ul>
+                </div>
+
+
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="blog-fitness.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
+  <div class="container">
+    <h2>Contáctanos</h2>
+    
+    <form id="contactForm" class="contact-form">
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="name">Nombre completo*</label>
+                <input type="text" id="name" name="name" required 
+                       placeholder="Ej: Juan Pérez" 
+                       pattern="[A-Za-zÁ-ú\s]{3,50}">
+                <span class="error-message">Por favor ingresa un nombre válido (3-50 caracteres)</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico*</label>
+                <input type="email" id="email" name="email" required 
+                       placeholder="Ej: ejemplo@dominio.com">
+                <span class="error-message">Por favor ingresa un email válido</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Teléfono*</label>
+                <input type="tel" id="phone" name="phone" required 
+                       placeholder="Ej: 1234567890" 
+                       pattern="[0-9]{9,15}">
+                <span class="error-message">Por favor ingresa un teléfono válido (9-15 dígitos)</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="membership">Interés en membresía*</label>
+                <select id="membership" name="membership" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="basica">Básica</option>
+                    <option value="estandard">Estándar</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Horario preferido*</label>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="morning" name="schedule" value="morning" required>
+                    <label for="morning">Mañana (8am-12pm)</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="afternoon" name="schedule" value="afternoon">
+                    <label for="afternoon">Tarde (12pm-6pm)</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="evening" name="schedule" value="evening">
+                    <label for="evening">Noche (6pm-10pm)</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" 
+                      placeholder="Cuéntanos tus objetivos fitness..."></textarea>
+        </div>
+        
+        <div class="form-group">
+            <div class="checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                <label for="newsletter">Deseo recibir promociones y noticias del gimnasio</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Acepto los términos y condiciones*</label>
+            </div>
+            <span class="error-message">Debes aceptar los términos y condiciones</span>
+        </div>
+        
+        <button type="submit" id="submitBtn">
+            <span class="btn-text">Enviar Mensaje</span>
+            <div class="spinner" id="spinner"></div>
+        </button>
+    </form>
+</div>
+
+<!-- Modal de confirmación -->
+<div class="modal" id="confirmationModal">
+    <div class="modal-content">
+        <div class="modal-icon">✓</div>
+        <h3>¡Mensaje enviado con éxito!</h3>
+        <p>Gracias por contactar con Gimnasio FITNESS PARK. Uno de nuestros entrenadores se pondrá en contacto contigo en las próximas 24 horas.</p>
+        <button class="modal-button" id="modalCloseBtn">Aceptar</button>
+    </div>
+</div>
+
+    <footer>
+      <div class="footer-container">
+          <!-- Sección Newsletter -->
+          <div class="footer-section newsletter">
+              <h3>Suscríbete a nuestro Newsletter</h3>
+              <p>Recibe las últimas noticias, promociones y consejos de fitness directamente en tu correo.</p>
+              <form class="newsletter-form">
+                  <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                  <button type="submit" class="newsletter-btn">Suscribirse</button>
+              </form>
+          </div>
+          
+          <!-- Enlaces rápidos -->
+          <div class="footer-section quick-links">
+              <h3>Enlaces Rápidos</h3>
+              <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="clases.html">Clases</a></li>
+                <li><a href="entrenadores.html">Entrenadores</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="clases.html">Horarios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+          </div>
+          
+          <!-- Redes sociales -->
+          <div class="footer-section social-media">
+              <h3>Síguenos</h3>
+              <p>Conéctate con nosotros en redes sociales y no te pierdas nuestras actualizaciones.</p>
+              <div class="social-icons">
+                  <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+              </div>
+          </div>
+          
+          <!-- Mapa -->
+          <div class="footer-section">
+              <h3>Encuéntranos</h3>
+              <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.2043152548918!2d-58.78885506142281!3d-34.644381793234935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9525fcbe8dd3%3A0xcc8ca2fdcd2a9b41!2sFitness%20Park%20Gym!5e0!3m2!1ses!2sar!4v1743893452495!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>             </div>
+          </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="copyright">
+          <p>&copy; 2023 PowerFit Gym. Todos los derechos reservados. | <a href="#" style="color: #f0c14b; text-decoration: none;">Política de Privacidad</a> | <a href="#" style="color: #f0c14b; text-decoration: none;">Términos de Servicio</a></p>
+      </div>
+  </footer>
+
+    <script src="../js/formulario.js"></script>
+
+
+</body>
+</html>
