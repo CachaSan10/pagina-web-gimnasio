@@ -3,8 +3,8 @@ var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-var startTime = 0; // Comienza en el minuto 1 (60 segundos)
-var endTime = 50;   // Termina en el minuto 2 (120 segundos)
+var startTime = 0; // Comienza al comienzo (0 segundos)
+var endTime = 50;   // Termina en el segundo 50 (50 segundos)
 
 // Crea el reproductor de video
 var player;
@@ -32,8 +32,6 @@ function onYouTubeIframeAPIReady() {
     });
 }
 
-var startTime = 60; // Comienza en el minuto 1 (60 segundos)
-var endTime = 120;   // Termina en el minuto 2 (120 segundos)
 
 //function onPlayerReady(event) {
   //  event.target.playVideo();
